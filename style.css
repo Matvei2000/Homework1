@@ -46,6 +46,12 @@ body {
   font-weight: 600;
   line-height: 34.01px;
   text-align: center;
+  border: 1px solid #000000;
+  transition: 0.3s;
+}
+.top__block-button:hover {
+  background-color: transparent;
+  color: #000;
 }
 .top__block-svg {
   position: absolute;
@@ -70,10 +76,29 @@ body {
   top: 568px;
   right: 344px;
 }
+.top__line {
+  background-color: #BCEC30;
+  height: 90px;
+  display: flex;
+  gap: 51px;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 3200px;
+  position: absolute;
+  bottom: 0;
+  left: -30px;
+}
+.top__line-text {
+  font-size: 30px;
+  font-weight: 700;
+}
 
 .about {
   background-color: #202027;
   padding-top: 94px;
+  padding-bottom: 50px;
+  position: relative;
 }
 .about__text-heading {
   font-size: 64px;
@@ -81,16 +106,20 @@ body {
   color: #fff;
 }
 .about__text-regular {
+  margin-top: 24px;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 200;
   color: #fff;
+  width: 788px;
 }
 .about .grid {
+  display: grid;
+  z-index: 0;
   margin-top: 72px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto);
   grid-template-rows: 2;
-  gap: 32px;
+  grid-column-gap: 32px;
 }
 .about .grid__cart-text {
   padding: 32px 32px 36px 32px;
@@ -100,6 +129,10 @@ body {
   border-radius: 30px;
   width: 378px;
   box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.1294117647);
+  z-index: 2;
+}
+.about .grid__cart-small {
+  margin-top: 32px;
 }
 .about .grid__cart-img {
   width: 378px;
@@ -121,4 +154,25 @@ body {
 }
 .about .grid .cart__text-heading {
   margin-top: 16px;
+}
+.about__block-svg {
+  position: absolute;
+}
+
+.svg6 {
+  top: 77px;
+  right: -120px;
+  z-index: 1;
+}
+
+.svg7 {
+  top: 770px;
+  left: 25px;
+  z-index: 1;
+}
+
+.svg8 {
+  top: 822px;
+  left: 40px;
+  z-index: 1;
 }/*# sourceMappingURL=style.css.map */
