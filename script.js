@@ -64,80 +64,30 @@
 
 // alert("5");
 
-let userInput = prompt("Пожалуйста, введите любое число:");
+let password = 'пароль';
+let userInput = prompt('Введите пароль');
 
-let number = Number(userInput);
-
-if (isNaN(number)) {
-    alert("Вы ввели не число. Пожалуйста, попробуйте снова.");
+if (userInput === password) {
+    alert('Пароль введен верно');
 } else {
-
-    if (number % 2 === 0) {
-        alert("Число четное");
-    } else {
-        alert("Число нечетное");
-    }
+    alert('Пароль введен неправильно');
 }
 
-let c = 2;
-
+let c = prompt('Введите число');
 if (c > 0 && c < 10) {
-    console.log("Верно");
+    alert('Верно');
 } else {
-    console.log("Неверно");
+    alert('Неверно');
 }
 
-let testValues = [0, 10, -3, 2];
-testValues.forEach(value => {
-    c = value;
-    if (c > 0 && c < 10) {
-        console.log(`c = ${c}: Верно`);
-    } else {
-        console.log(`c = ${c}: Неверно`);
-    }
-});
-
-let d = prompt("Введите первое число");
-let e = prompt("Введите второе число");
-
+let d = prompt('Введите любое число');
+let e = prompt('Введите еще одно число');
 if (d > 100 || e > 100) {
-    console.log("Верно");
+    alert('Верно');
 } else {
-    console.log("Неверно");
+    alert('Неверно');
 }
 
 let a = '2';
 let b = '3';
 alert(Number(a) + Number(b));
-
-let monthNumber = prompt("Введите номер месяца");
-let numberMonth = Number(monthNumber);
-
-if (monthNumber < 1 || monthNumber > 12) {
-    console.log("Ошибка: номер месяца должен быть от 1 до 12.");
-} else {
-    switch (numberMonth) {
-        case 12:
-        case 1:
-        case 2:
-            console.log("Зима");
-            break;
-        case 3:
-        case 4:
-        case 5:
-            console.log("Весна");
-            break;
-        case 6:
-        case 7:
-        case 8:
-            console.log("Лето");
-            break;
-        case 9:
-        case 10:
-        case 11:
-            console.log("Осень");
-            break;
-        default:
-            console.log("Ошибка: номер месяца должен быть от 1 до 12.");
-    }
-}
