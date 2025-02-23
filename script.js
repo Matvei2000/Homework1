@@ -64,6 +64,9 @@
 
 // alert("5");
 
+
+
+
 let password = 'пароль';
 let userInput = prompt('Введите пароль');
 
@@ -75,20 +78,52 @@ if (userInput === password) {
 
 let c = prompt('Введите число');
 if (c > 0 && c < 10) {
-    alert('Верно');
+    console.log('Верно');
 } else {
-    alert('Неверно');
+    console.log('Неверно');
 }
 
 let d = prompt('Введите любое число');
 let e = prompt('Введите еще одно число');
 if (d > 100 || e > 100) {
-    alert('Верно');
+    console.log('Верно');
 } else {
-    alert('Неверно');
+    console.log('Неверно');
 }
 
 
 let a = '2';
 let b = '3';
-alert(Number(a) + Number(b));
+console.log(Number(a) + Number(b));
+
+
+let monthNumber = 12;
+
+if (monthNumber > 12) {
+    console.log('Некорректный номер месяца');
+} else {
+    switch (monthNumber) {
+        case 12:
+        case 1:
+        case 2:
+            console.log('Зима');
+            break;
+        case 3:
+        case 4:
+        case 5:
+            console.log('Весна');
+            break;
+        case 6:
+        case 7:
+        case 8:
+            console.log('Лето');
+            break;
+        case 9:
+        case 10:
+        case 11:
+            console.log('Осень');
+            break;
+        default:
+            console.log('Некорректный номер месяца');
+    }
+}

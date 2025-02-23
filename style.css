@@ -135,7 +135,7 @@ body {
   color: #fff;
   width: 788px;
 }
-.about .grid {
+.about__grid {
   display: grid;
   position: relative;
   margin-top: 72px;
@@ -144,39 +144,52 @@ body {
   grid-template-rows: 2;
   grid-column-gap: 32px;
 }
-.about .grid__cart-text {
+.about__cart-text {
   padding: 32px 32px 36px 32px;
 }
-.about .grid__cart {
+.about__grid-cart {
   background-color: #fff;
   border-radius: 30px;
   width: 378px;
   box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.1294117647);
 }
-.about .grid__cart-small {
+.small {
   margin-top: 32px;
+  padding-bottom: 7px;
 }
-.about .grid__cart-img {
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.about__cart-img {
   width: 378px;
   height: 314px;
   border-radius: 30px;
 }
-.about .grid a {
+/* .about .grid a {
   text-decoration: none;
   color: #000;
-}
-.about .grid .cart__number {
+} */
+.about__text-number {
   background-color: #F7F7F7;
   border-radius: 53px;
   display: inline-block;
-}
-.about .grid .cart__number-text {
-  font-size: 16px;
+  margin-bottom: 16px;
   padding: 8px 16px 10px 16px;
+
 }
-.about .grid .cart__text-heading {
-  margin-top: 16px;
+.about__number-text {
+  font-size: 16px;
+  /* background-color: #F7F7F7;
+  padding: 8px 16px 10px 16px; */
 }
+.about__number-heading {
+  /* margin-top: 16px; */
+  font-size: 32px;
+}
+
 .about__block-svg {
   position: absolute;
 }
