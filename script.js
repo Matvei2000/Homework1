@@ -92,9 +92,10 @@ if (d > 100 || e > 100) {
 }
 
 
-let x = '2';
-let y = '3';
-console.log(Number(x) + Number(y));
+let r = '2';
+let t = '3';
+console.log(Number(r) + Number(t));
+
 
 
 let monthNumber = 12;
