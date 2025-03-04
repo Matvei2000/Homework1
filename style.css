@@ -5,6 +5,7 @@
 
 body {
   font-family: "Montserrat";
+  overflow-x: hidden;
 }
 
 .center {
@@ -13,11 +14,11 @@ body {
 }
 
 .top {
+  position: relative;
   background: #E1FF8F;
-  height: 100vh;
 }
 .top__block {
-  position: relative;
+  padding-bottom: 246px;
   padding-top: 196px;
 }
 .top__block-heading {
@@ -66,7 +67,7 @@ body {
 }
 .top__block .svg3 {
   top: 0;
-  right: -120px;
+  right: 0px;
 }
 .top__block .svg4 {
   top: 538px;
@@ -114,7 +115,7 @@ body {
 }
 .about .grid {
   display: grid;
-  z-index: 0;
+  position: relative;
   margin-top: 72px;
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -129,7 +130,7 @@ body {
   border-radius: 30px;
   width: 378px;
   box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.1294117647);
-  z-index: 2;
+  z-index: 1;
 }
 .about .grid__cart-small {
   margin-top: 32px;
@@ -162,7 +163,7 @@ body {
 .svg6 {
   top: 77px;
   right: -120px;
-  z-index: 1;
+  z-index: 0;
 }
 
 .svg7 {
