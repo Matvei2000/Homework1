@@ -144,7 +144,7 @@ body {
   grid-template-rows: 2;
   grid-column-gap: 32px;
 }
-.about__cart-text {
+.about__grid .about__cart-text {
   padding: 32px 32px 36px 32px;
 }
 .about__grid-cart {
@@ -153,43 +153,36 @@ body {
   width: 378px;
   box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.1294117647);
 }
-.small {
-  margin-top: 32px;
-  padding-bottom: 7px;
+.about__grid-cart .small {
+  justify-content: end;
+  margin-top: 1002px;
 }
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-.about__cart-img {
+.about__grid-cart .about__cart-img {
   width: 378px;
   height: 314px;
   border-radius: 30px;
 }
-/* .about .grid a {
+.about__grid a {
   text-decoration: none;
   color: #000;
-} */
-.about__text-number {
+}
+.about__grid .about__text-number {
   background-color: #F7F7F7;
   border-radius: 53px;
   display: inline-block;
-  margin-bottom: 16px;
-  padding: 8px 16px 10px 16px;
-
 }
-.about__number-text {
+.about__grid .about__text-number .about__number-text {
   font-size: 16px;
-  /* background-color: #F7F7F7;
-  padding: 8px 16px 10px 16px; */
+  padding: 8px 16px 10px 16px;
 }
-.about__number-heading {
-  /* margin-top: 16px; */
+.about__grid .about__number-heading {
   font-size: 32px;
+  margin-top: 16px;
 }
-
+.about__grid .small {
+  justify-content: end;
+  margin-top: 40px;
+}
 .about__block-svg {
   position: absolute;
 }
@@ -217,6 +210,9 @@ a {
   background: #202027;
   background-size: cover;
   position: relative;
+}
+.mini-game__block-svg {
+  position: absolute;
 }
 .mini-game .svg9 {
   position: absolute;
@@ -250,38 +246,38 @@ a {
   padding-top: 46px;
   margin-bottom: 72px;
 }
-.mini-game__games .game__text {
-  padding: 48px 48px 0 48px;
-}
-.mini-game__games .game__tupe1 {
+.mini-game__games-tupe1 {
   background-color: #fff;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   border-radius: 30px;
 }
-.mini-game__games .game__tupe2 {
+.mini-game__games-tupe2 {
   background-color: #fff;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   border-radius: 30px;
 }
-.mini-game__games .game__img {
+.mini-game__games-text {
+  padding: 48px 48px 0 48px;
+}
+.mini-game__games-img {
   width: 600px;
   height: 500px;
   border-radius: 30px;
 }
-.mini-game__games .game__text-h2 {
+.mini-game__games .mini-game__text-h2 {
   font-size: 48px;
   font-weight: 700;
 }
-.mini-game__games .game__text-regular {
+.mini-game__games .mini-game__text-regular {
   font-size: 24px;
   font-weight: 400;
   margin-top: 24px;
 }
-.mini-game__games .game .game__button {
+.mini-game__games .mini-game__text-button {
   font-family: Montserrat;
   color: white;
   width: 247px;
@@ -296,7 +292,7 @@ a {
   border: 1px solid #000000;
   transition: 0.3s;
 }
-.mini-game__games .game .game__button:hover {
+.mini-game__games .mini-game__text-button:hover {
   background-color: transparent;
   color: #000;
 }
@@ -410,7 +406,7 @@ a {
     font-size: 40px;
     margin-bottom: 48px;
   }
-  .mini-game .mini-game__games {
+  .mini-game .mini-game-games {
     gap: 24px;
   }
   .mini-game .game__button {

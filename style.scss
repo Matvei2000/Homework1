@@ -182,7 +182,7 @@ body {
 
     }
 
-    .grid {
+    &__grid {
 
         display: grid;
         position: relative;
@@ -203,12 +203,12 @@ body {
         // width: 100%;
         // padding-top: 72px;
 
-        &__cart-text {
+        .about__cart-text {
             padding: 32px 32px 36px 32px;
 
         }
 
-        &__cart {
+        &-cart {
             // grid-column: span 1;
             background-color: #fff;
             border-radius: 30px;
@@ -216,12 +216,13 @@ body {
             box-shadow: 0px 12.61px 42.25px -7.57px #00000021;
             // z-index: 1;
 
-            &-small {
-                margin-top: 32px;
+            .small {
+                justify-content: end;
+                margin-top: 1002px;
             }
 
 
-            &-img {
+            .about__cart-img {
                 width: 378px;
                 height: 314px;
                 border-radius: 30px;
@@ -233,7 +234,7 @@ body {
             color: #000;
         }
 
-        .cart__number {
+        .about__text-number {
 
             background-color: #F7F7F7;
             border-radius: 53px;
@@ -241,7 +242,7 @@ body {
             display: inline-block;
             // text-align: center;
 
-            &-text {
+            .about__number-text {
                 font-size: 16px;
                 padding: 8px 16px 10px 16px;
 
@@ -249,11 +250,15 @@ body {
             }
         }
 
-        .cart__text-heading {
-
+        .about__number-heading {
+            font-size: 32px;
             margin-top: 16px;
         }
 
+        .small {
+            justify-content: end;
+            margin-top: 40px;
+        }
     }
 
     &__block-svg {
@@ -286,6 +291,10 @@ body {
     background: #202027;
     background-size: cover;
     position: relative;
+
+    &__block-svg {
+        position: absolute;
+    }
 
     .svg9 {
         position: absolute;
@@ -326,35 +335,41 @@ body {
         margin-bottom: 72px;
     }
 
+    &__games-tupe1 {
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: 30px;
+    }
+
+    &__games-tupe2 {
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        border-radius: 30px;
+
+    }
+
     &__games {
 
-        .game {
+        
 
-            &__text {
+            &-text {
                 padding: 48px 48px 0 48px;
-            }
 
-
-            &__tupe1 {
-                background-color: #fff;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                border-radius: 30px;
-            }
-
-            &__tupe2 {
-                background-color: #fff;
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-start;
-                border-radius: 30px;
-
+                
             }
 
 
 
-            &__img {
+
+
+
+
+
+            &-img {
                 width: 600px;
                 height: 500px;
 
@@ -363,20 +378,20 @@ body {
 
             }
 
-            &__text-h2 {
+            .mini-game__text-h2 {
 
                 font-size: 48px;
                 font-weight: 700;
             }
 
-            &__text-regular {
+            .mini-game__text-regular {
 
                 font-size: 24px;
                 font-weight: 400;
                 margin-top: 24px;
             }
 
-            .game__button {
+            .mini-game__text-button {
                 font-family: Montserrat;
                 color: white;
                 width: 247px;
@@ -394,7 +409,7 @@ body {
 
             }
 
-            .game__button:hover {
+            .mini-game__text-button:hover {
                 background-color: transparent;
                 color: #000;
             }
@@ -402,7 +417,7 @@ body {
         }
 
 
-    }
+    
 
 }
 
