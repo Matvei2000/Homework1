@@ -144,20 +144,20 @@ body {
   grid-template-rows: 2;
   grid-column-gap: 32px;
 }
-.about .cards__card {
+.about .cards .card {
   background-color: #fff;
   border-radius: 30px;
   width: 378px;
   box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.1294117647);
 }
-.about .cards__card-small {
+.about .cards .card__small {
   justify-content: end;
   margin-top: 40px;
 }
-.about .cards__card-text {
+.about .cards .card__text {
   padding: 32px 32px 36px 32px;
 }
-.about .cards__card-img {
+.about .cards .card__img {
   width: 378px;
   height: 314px;
   border-radius: 30px;
@@ -166,16 +166,16 @@ body {
   text-decoration: none;
   color: #000;
 }
-.about .cards .cards__text-bg {
+.about .cards .card__text-bg {
   background-color: #F7F7F7;
   border-radius: 53px;
   display: inline-block;
 }
-.about .cards .cards__text-bg .cards__text-number {
+.about .cards .card__text-bg .card__text-number {
   font-size: 16px;
   padding: 8px 16px 10px 16px;
 }
-.about .cards .cards__text-heading {
+.about .cards .card__text-heading {
   font-size: 32px;
   margin-top: 16px;
 }
@@ -242,33 +242,33 @@ body {
   flex-direction: column;
   gap: 32px;
 }
-.mini-game .games__tupe1 {
+.mini-game .games .game__tupe1 {
   background-color: #fff;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   border-radius: 30px;
 }
-.mini-game .games__tupe2 {
+.mini-game .games .game__tupe2 {
   background-color: #fff;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   border-radius: 30px;
 }
-.mini-game .games__text {
+.mini-game .games .game__text {
   padding: 48px 48px 0 48px;
 }
-.mini-game .games__text-h2 {
+.mini-game .games .game__text-h2 {
   font-size: 48px;
   font-weight: 700;
 }
-.mini-game .games__text-regular {
+.mini-game .games .game__text-regular {
   font-size: 24px;
   font-weight: 400;
   margin-top: 24px;
 }
-.mini-game .games__text-button {
+.mini-game .games .game__text-button {
   font-family: Montserrat;
   color: white;
   width: 247px;
@@ -283,11 +283,11 @@ body {
   border: 1px solid #000000;
   transition: 0.3s;
 }
-.mini-game .games__text-button:hover {
+.mini-game .games .game__text-button:hover {
   background-color: transparent;
   color: #000;
 }
-.mini-game .games__img {
+.mini-game .games .game__img {
   width: 600px;
   height: 500px;
   border-radius: 30px;
