@@ -16,6 +16,7 @@ body {
 .top {
     position: relative;
     background: #E1FF8F;
+    
     background-position: center;
     background-size: cover;
     z-index: 1;
@@ -182,7 +183,7 @@ body {
 
     }
 
-    .grid {
+    .cards {
 
         display: grid;
         position: relative;
@@ -203,12 +204,9 @@ body {
         // width: 100%;
         // padding-top: 72px;
 
-        &__cart-text {
-            padding: 32px 32px 36px 32px;
 
-        }
 
-        &__cart {
+        .card {
             // grid-column: span 1;
             background-color: #fff;
             border-radius: 30px;
@@ -216,12 +214,17 @@ body {
             box-shadow: 0px 12.61px 42.25px -7.57px #00000021;
             // z-index: 1;
 
-            &-small {
-                margin-top: 32px;
+            &__small {
+                justify-content: end;
+                margin-top: 40px;
             }
 
+            &__text {
+                padding: 32px 32px 36px 32px;
 
-            &-img {
+            }
+
+            &__img {
                 width: 378px;
                 height: 314px;
                 border-radius: 30px;
@@ -233,7 +236,7 @@ body {
             color: #000;
         }
 
-        .cart__number {
+        .card__text-bg {
 
             background-color: #F7F7F7;
             border-radius: 53px;
@@ -241,7 +244,8 @@ body {
             display: inline-block;
             // text-align: center;
 
-            &-text {
+            .card__text-number {
+
                 font-size: 16px;
                 padding: 8px 16px 10px 16px;
 
@@ -249,10 +253,11 @@ body {
             }
         }
 
-        .cart__text-heading {
-
+        .card__text-heading {
+            font-size: 32px;
             margin-top: 16px;
         }
+
 
     }
 
@@ -287,6 +292,10 @@ body {
     background-size: cover;
     position: relative;
 
+    &__block-svg {
+        position: absolute;
+    }
+
     .svg9 {
         position: absolute;
         top: 93px;
@@ -311,11 +320,7 @@ body {
         right: 55px;
     }
 
-    .mini-game__games {
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-    }
+
 
 
     &__text {
@@ -326,57 +331,50 @@ body {
         margin-bottom: 72px;
     }
 
-    &__games {
-
-        .game {
-
-            &__text {
-                padding: 48px 48px 0 48px;
-            }
 
 
-            &__tupe1 {
-                background-color: #fff;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                border-radius: 30px;
-            }
+    .games {
 
-            &__tupe2 {
-                background-color: #fff;
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-start;
-                border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
 
-            }
+        .game__tupe1 {
+            background-color: #fff;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-radius: 30px;
+        }
 
+        .game__tupe2 {
+            background-color: #fff;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            border-radius: 30px;
 
-
-            &__img {
-                width: 600px;
-                height: 500px;
-
-                border-radius: 30px;
+        }
 
 
-            }
 
-            &__text-h2 {
+        .game__text {
+            padding: 48px 48px 0 48px;
+
+            &-h2 {
 
                 font-size: 48px;
                 font-weight: 700;
             }
 
-            &__text-regular {
+            &-regular {
 
                 font-size: 24px;
                 font-weight: 400;
                 margin-top: 24px;
             }
 
-            .game__button {
+            &-button {
                 font-family: Montserrat;
                 color: white;
                 width: 247px;
@@ -394,15 +392,29 @@ body {
 
             }
 
-            .game__button:hover {
+            &-button:hover {
                 background-color: transparent;
                 color: #000;
             }
+        }
+
+        .game__img {
+            width: 600px;
+            height: 500px;
+
+            border-radius: 30px;
+
 
         }
 
 
+
+
+
     }
+
+
+
 
 }
 
