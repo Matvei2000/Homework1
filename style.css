@@ -380,6 +380,14 @@ body {
   .top__block-button {
     width: 285px;
   }
+  .top__line {
+    height: 51px;
+    gap: 27px;
+  }
+  .top__line-text {
+    font-size: 16px;
+    font-weight: 700;
+  }
   .about {
     display: none;
   }
@@ -407,37 +415,44 @@ body {
   }
   .mini-game .game__button {
     width: 285px;
-    margin-top: 32px;
   }
   .mini-game .game-button:hover {
     background-color: transparent;
     color: #000;
   }
-  .mini-game .game__text {
+  .mini-game .games {
+    gap: 24px;
+  }
+  .mini-game .games .game__tupe1 {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    border-radius: 30px;
+  }
+  .mini-game .games .game__text {
     font-size: 40px;
     padding: 29px 29px 32px 29px;
   }
-  .mini-game .game__tupe1 {
-    flex-direction: column-reverse;
-    width: 343px;
-  }
-  .mini-game .game__tupe2 {
+  .mini-game .games .game__tupe2 {
+    background-color: #fff;
+    display: flex;
     flex-direction: column;
-    width: 343px;
+    border-radius: 30px;
   }
-  .mini-game .game__img {
-    width: 343px;
-    height: 284.93px;
+  .mini-game .games .game__img {
+    width: 100%;
+    height: 100%;
   }
-  .mini-game .game__text-h2 {
+  .mini-game .games .game__text-h2 {
     font-size: 32px;
   }
-  .mini-game .game__text-regular {
+  .mini-game .games .game__text-regular {
     font-size: 16px;
     margin-top: 16px;
   }
-  .mini-game .game__text {
-    margin-bottom: 32px;
+  .mini-game .games .game__text-button {
+    width: 100%;
   }
   .footer {
     padding-top: 40px;
