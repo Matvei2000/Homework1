@@ -1,130 +1,178 @@
-let a = 10;
-alert(a);
-a = 20;
-alert(a);
+// let a = 10;
+// alert(a);
+// a = 20;
+// alert(a);
 
-let iphoneReleaseYear = 2007;
-alert(iphoneReleaseYear);
+// let iphoneReleaseYear = 2007;
+// alert(iphoneReleaseYear);
 
-let creatorName = "Brendan Eich";
-alert(creatorName);
+// let creatorName = "Brendan Eich";
+// alert(creatorName);
 
-let num1 = 10;
-let num2 = 2;
-alert(num1 + num2);
-alert(num1 - num2);
-alert(num1 * num2);
-alert(num1 / num2);
+// let num1 = 10;
+// let num2 = 2;
+// alert(num1 + num2);
+// alert(num1 - num2);
+// alert(num1 * num2);
+// alert(num1 / num2);
 
-let result = 2 ** 5;
-alert(result);
+// let result = 2 ** 5;
+// alert(result);
 
-a = 9;
-let b = 2;
-let remainder = a % b;
-alert(remainder);
+// a = 9;
+// let b = 2;
+// let remainder = a % b;
+// alert(remainder);
 
-let num = 1;
-num += 5;
-num -= 3;
-num *= 7;
-num /= 3;
-num++;
-num--;
-alert(num);
+// let num = 1;
+// num += 5;
+// num -= 3;
+// num *= 7;
+// num /= 3;
+// num++;
+// num--;
+// alert(num);
 
-let age = prompt("Сколько вам лет?");
-alert("Вам " + age + " лет!");
+// let age = prompt("Сколько вам лет?");
+// alert("Вам " + age + " лет!");
 
-let user = {
-    name: "Матвей",
-    age: 23,
-    isAdmin: true
+// let user = {
+//     name: "Матвей",
+//     age: 23,
+//     isAdmin: true
+// };
+// console.log(user);
+
+// let userName = prompt("Как вас зовут?");
+// alert(`Привет, ${userName}!`);
+
+
+
+// let number = prompt("Загадайте любое число");
+// number = parseFloat(number);
+// let doubled = number * 2;
+// alert(doubled);
+
+// let addedTen = doubled + 10;
+// alert(addedTen);
+
+// let dividedByTwo = addedTen / 2;
+// alert(dividedByTwo);
+
+// let finalResult = dividedByTwo - number;
+// alert(finalResult);
+
+// alert("5");
+
+
+
+
+// let password = 'пароль';
+// let userInput = prompt('Введите пароль');
+
+// if (userInput === password) {
+//     alert('Пароль введен верно');
+// } else {
+//     alert('Пароль введен неправильно');
+// }
+
+// let c = prompt('Введите число');
+// if (c > 0 && c < 10) {
+//     console.log('Верно');
+// } else {
+//     console.log('Неверно');
+// }
+
+// let d = prompt('Введите любое число');
+// let e = prompt('Введите еще одно число');
+// if (d > 100 || e > 100) {
+//     console.log('Верно');
+// } else {
+//     console.log('Неверно');
+// }
+
+
+// let r = '2';
+// let t = '3';
+// console.log(Number(r) + Number(t));
+
+
+
+// let monthNumber = 12;
+
+// if (monthNumber > 12) {
+//     console.log('Некорректный номер месяца');
+// } else {
+//     switch (monthNumber) {
+//         case 12:
+//         case 1:
+//         case 2:
+//             console.log('Зима');
+//             break;
+//         case 3:
+//         case 4:
+//         case 5:
+//             console.log('Весна');
+//             break;
+//         case 6:
+//         case 7:
+//         case 8:
+//             console.log('Лето');
+//             break;
+//         case 9:
+//         case 10:
+//         case 11:
+//             console.log('Осень');
+//             break;
+//         default:
+//             console.log('Некорректный номер месяца');
+//     }
+// }
+
+let i = 1
+while (i < 3) {
+    console.log("Привет");
+    i++;
+}
+
+let y = 1
+do {
+    console.log(y);
+    y++;
+
+} while (y <= 5)
+
+let q = 7
+do {
+    console.log(q);
+    q++;
+
+} while (q <= 22)
+
+let obj = {
+    "Коля": "200",
+    "Вася": "300",
+    "Петя": "400"
 };
-console.log(user);
 
-let userName = prompt("Как вас зовут?");
-alert(`Привет, ${userName}!`);
-
-
-
-let number = prompt("Загадайте любое число");
-number = parseFloat(number);
-let doubled = number * 2;
-alert(doubled);
-
-let addedTen = doubled + 10;
-alert(addedTen);
-
-let dividedByTwo = addedTen / 2;
-alert(dividedByTwo);
-
-let finalResult = dividedByTwo - number;
-alert(finalResult);
-
-alert("5");
-
-
-
-
-let password = 'пароль';
-let userInput = prompt('Введите пароль');
-
-if (userInput === password) {
-    alert('Пароль введен верно');
-} else {
-    alert('Пароль введен неправильно');
+for (let key in obj) {
+    console.log(`${key} — зарплата ${obj[key]} долларов`);
 }
 
-let c = prompt('Введите число');
-if (c > 0 && c < 10) {
-    console.log('Верно');
-} else {
-    console.log('Неверно');
+let n = 1000;
+let num = 0;
+
+while (n >= 50) {
+  n = n / 2;
+  num++;
 }
 
-let d = prompt('Введите любое число');
-let e = prompt('Введите еще одно число');
-if (d > 100 || e > 100) {
-    console.log('Верно');
-} else {
-    console.log('Неверно');
-}
+console.log("Результат:", n);     
+console.log("Итераций:", num);
 
+let firstFriday = 5;
+let daysInMonth = 31;
 
-let r = '2';
-let t = '3';
-console.log(Number(r) + Number(t));
-
-
-
-let monthNumber = 12;
-
-if (monthNumber > 12) {
-    console.log('Некорректный номер месяца');
-} else {
-    switch (monthNumber) {
-        case 12:
-        case 1:
-        case 2:
-            console.log('Зима');
-            break;
-        case 3:
-        case 4:
-        case 5:
-            console.log('Весна');
-            break;
-        case 6:
-        case 7:
-        case 8:
-            console.log('Лето');
-            break;
-        case 9:
-        case 10:
-        case 11:
-            console.log('Осень');
-            break;
-        default:
-            console.log('Некорректный номер месяца');
-    }
+for (let day = firstFriday; day <= daysInMonth; day += 7) {
+  console.log(`Сегодня пятница, ${day}-е число. Необходимо подготовить отчет.`);
 }
